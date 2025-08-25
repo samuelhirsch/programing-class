@@ -1,0 +1,248 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    width: 80%;
+    margin: auto;
+
+}
+
+#go-to-Products {
+    margin-bottom: 40px;
+}
+
+header {
+    width: 100%;
+}
+
+.header-nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 1px;
+    left: 1px;
+}
+
+.header-ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    margin-left: 10%;
+
+
+}
+
+.header-ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-ul a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.title {
+    background-color: rgb(222, 220, 220);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 span {
+    font-style: italic;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.products section:not(:last-child) {
+    border-right: 1px solid black;
+    padding-right: 1em;
+}
+
+.products section:not(:first-child) {
+    padding-left: 1em;
+}
+
+.products section {
+    text-align: justify;
+}
+
+.products h4 {
+    text-align: center;
+    font-size: large;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+@media (width<800px) {
+    .products {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .products section:not(:first-child) {
+        padding-left: 0px;
+    }
+
+    .products section:not(:last-child) {
+        padding-right: 0px;
+        border-right: 0;
+    }
+}
+
+form {
+    background-color: rgb(222, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    border-radius: 5px;
+    padding-top: 3%;
+    padding-bottom: 2.5%;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid rgb(166, 166, 166);
+    border-bottom: black;
+    border-right: black;
+    box-shadow: 2px 2px 1px 1.5px;
+}
+
+form input:not(:first-of-type) {
+    margin-top: -10px;
+
+}
+
+button {
+    margin-bottom: -3px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(166, 166, 166);
+    border-right: 2px solid rgb(166, 166, 166);
+    box-shadow: rgb(166, 166, 166) 0.6px 0.6px 0px 0px;
+}
+
+form h3 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: larger;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+@media(width<1000px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#table-div {
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-right: 10%;
+    margin: auto;
+
+}
+
+caption {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#total {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+th:not(:first-child) {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+tr:not(tfoot tr) td,
+th {
+    border: 2px solid black
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+td:last-child {
+    color: red;
+}
+
+td {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: beige;
+}
+
+tbody tr:nth-child(even) {
+
+    background-color: rgba(187, 248, 248, 0.9)
+}
+
+table tr:hover {
+    background-color: blue;
+
+}
+
+tfoot {
+    border: 2px solid black
+}
+
+tfoot td:first-child {
+    border-right: 2px solid black;
+
+}
+
+#about-us {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    bottom: 0;
+    right: 1px;
+    left: 1px;
+
+}
+
+footer h5 {
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}

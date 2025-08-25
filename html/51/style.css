@@ -1,0 +1,31 @@
+body{text-align: center; 
+    background-color:brown;
+ 
+}
+h1,h2{
+    border: solid;
+    background-color: silver;
+ 
+}
+nav{
+ font-size: 2em;
+}
+a{
+    
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: brown;
+   background-color: silver;
+}
+img{
+     border: 5px solid silver;
+     padding: 10px ;
+     background-color: black;
+}
+.menu{ height: 150px;
+    
+    
+}

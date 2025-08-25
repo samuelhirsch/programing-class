@@ -1,0 +1,36 @@
+.menuitem img {
+    border: 5px solid silver;
+    padding: 10px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+}
+
+.menuitem section {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+}
+.menuitem{
+    text-align: center;
+}
+
+.menuitem p {
+    font-style: italic;
+}
+.food {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menuitem span{
+    font-weight: bold;
+}
+.soup img{
+   rotate: 90deg;
+}
+.menuitem section:hover{
+    scale: 1.25 1.25;
+}

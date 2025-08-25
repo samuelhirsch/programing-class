@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+            text-align: center;
+            padding:0px
+        }
+        body{
+            text-align: center;
+        }
+        label:not(:first-of-type){
+            display: block;
+        }
+        .feedback{
+            border: 2px solid black;
+            padding:0px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="h1stuff">
+        <img class="h1icon1" src="images/icon.jpg" alt="">
+       <h1>Hirsch's restaurant </h1>
+    <img class="h1icon2" src="images/icon.jpg" alt="">
+    </div>
+       <header>
+     <nav>
+        <a href="index.html">Home</a> |
+        <a href="ourmenu.html"> Our menu </a> |
+        <a href="aboutus.html"> About us</a> |
+        <a href="signin.html">Sign in</a>
+    </nav>
+      <h1>Your feedback is important to us</h1>
+    </header>
+     <form class="feedback" method="post">
+        <p>Please sign in to leave fedback</p>
+        <label >
+            User name:
+            <input name="username" minlength="3" required>
+        </label>
+        <label >
+            Password:
+            <input type="password" name="password" required>
+        </label>
+        <label >
+            Feedback:
+            <input type="text" name="feedback" minlength="5" maxlength="500" required placeholder="enter your feedback">
+        </label>
+        <input type="submit">
+     </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+   html{
+            text-align: center;
+        }
+        
+      /*  main{
+            display: inline-block;
+            vertical-align:top;
+        }*/
+       #restpic img{
+            width: 500px;
+            height: 352px;
+            border-radius: 25%;
+            border: 2px solid black;
+            
+        }
+       #restpic{
+        text-align: center;
+        display: inline;
+       
+       }
+       .pics-of-rest img{
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+        rotate: 5deg;
+       margin-left: 15;
+        position: relative;
+       }
+       .pics-of-rest{
+        width: 327px;
+        height: 335px;
+       padding:10px;
+        display: inline-block;
+        margin:0px;
+        padding: 0px;
+       
+       }
+       .pics-of-rest li{
+        display: inline;
+        margin:-8px;
+       }
+       #soup{
+        rotate: 96deg;
+       }
+       #soup2{
+        rotate: 96deg;
+       }
+       .pics-of-rest img:hover{
+        scale: 1.25 1.25;
+       z-index: 1;
+       }

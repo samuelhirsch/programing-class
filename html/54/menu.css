@@ -1,0 +1,68 @@
+.menuitem img {
+    border: 5px solid rgb(129, 73, 3);
+    padding: 10px;
+    background-color: rgb(176, 114, 38);
+    border-radius: 40px;
+    height: 150px;
+    width: 150px;
+}
+
+.menuitem section {
+   display: inline-block;
+   margin: auto;
+    border: 1px solid rgb(66, 40, 7);
+    background-color:rgb(189, 124, 45);
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    opacity: 0.9;
+    position: relative;
+}
+.menuitem{
+    text-align: center;
+
+}
+
+.menuitem p {
+  font-family: cursive;
+   font-size: 0.9em;
+   font-style: italic;
+}
+.food {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menuitem span{
+    font-weight: bold;
+}
+.soup img{
+   rotate: 90deg;
+}
+.menuitem section:hover{
+    scale: 1.25 1.25;
+    z-index: 1;
+    cursor:pointer
+}
+#video{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border:2px solid rgb(189, 124, 45);
+    margin-top: 10px;
+    padding-bottom: 0px;
+    font-style: italic;
+    border-radius: 20px;
+    
+    background-color:rgb(189, 124, 45) ;
+}
+#video video{
+height: 200px;
+ width:  300px;
+ 
+
+}
+#video p{
+    padding: 0px;
+    margin: 0px;
+}

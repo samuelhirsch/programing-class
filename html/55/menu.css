@@ -1,0 +1,107 @@
+.menuitem img {
+    border: 5px solid rgb(129, 73, 3);
+    padding: 10px;
+    background-color: rgb(176, 114, 38);
+    border-radius: 40px;
+    height: 150px;
+    width: 150px;
+}
+
+.menuitem section {
+   display: inline-block;
+   margin: auto;
+    border: 1px solid rgb(66, 40, 7);
+    background-color:rgb(189, 124, 45);
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    opacity: 0.9;
+    position: relative;
+}
+.menuitem{
+    text-align: center;
+
+}
+
+.menuitem p {
+  font-family: cursive;
+   font-size: 0.9em;
+   font-style: italic;
+}
+.food {
+    font-weight: bold;
+    text-decoration: underline;
+}
+p > span{
+    font-weight: bold;
+}
+.soup img{
+   rotate: 90deg;
+}
+.menuitem section:hover{
+    scale: 1.25 1.25;
+    z-index: 1;
+    cursor:pointer
+}
+#video{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border:2px solid rgb(189, 124, 45);
+    margin-top: 10px;
+    padding-bottom: 0px;
+    font-style: italic;
+    border-radius: 20px;
+    
+    background-color:rgb(189, 124, 45) ;
+}
+#video video{
+height: 200px;
+ width:  300px;
+ 
+
+}
+#video p{
+    padding: 0px;
+    margin: 0px;
+}
+
+table{
+    background-color: rgb(239, 186, 122); 
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+  
+}
+th{
+ border: 2px solid black; 
+}
+ td{
+    border: 1.5px solid black;
+    padding: 1px 
+}
+tbody tr:nth-child(2n+1){
+    background-color:rgb(241, 169, 80); ;
+}
+tbody tr:hover{
+    background-color: rgb(234, 226, 214);
+    color:brown
+}
+td:last-child,th:last-child{
+    font-weight: bold;
+    font-size: large;
+}
+tbody td:first-child{
+    font-style: italic;
+}
+tfoot tr{
+    font-weight: bold;
+    border: 2px solid rgb(22, 20, 20);
+}
+[mycaption="1"]{
+    text-decoration: underline;
+    font-size: 2em;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}

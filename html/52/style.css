@@ -1,0 +1,36 @@
+html{
+    background-color:brown;
+    text-align: center;
+}
+body{
+    background-color:brown;
+    width: 1250px;
+    margin: auto;
+}
+h1,h2{
+    border: solid;
+    background-color: silver;
+    text-align: center;
+}
+nav{
+ font-size: 2em;
+ margin: 10px;
+}
+header{
+    text-align: center;
+}
+a{
+    
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: brown;
+   background-color: silver;
+}
+
+
+
+
+

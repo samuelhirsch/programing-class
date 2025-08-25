@@ -1,0 +1,58 @@
+      html{
+            text-align: center;
+            
+        }
+       #restpic img{
+            width: 400px;
+            height: 252px;
+            border-radius: 25%;
+            border: 5px solid rgb(189, 124, 45);
+            
+        }
+       #restpic{
+        text-align: center;
+       /* display: inline;*/
+       
+       }
+       .pics-of-rest img{
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+       
+       margin-left: 15;
+        position: relative;
+       }
+       .pics-of-rest img:not(.soup){
+              rotate: 5deg;
+       }
+       .pics-of-rest{
+        width: 327px;
+        height: 335px;
+       padding:10px;
+        display: inline-block;
+        margin:0px;
+        padding: 0px;
+       
+       }
+       .pics-of-rest li{
+        display: inline;
+        margin:-8px;
+       }
+       .soup{
+        rotate: 96deg;
+       }
+      
+       .pics-of-rest img:hover{
+        scale: 1.25 1.25;
+       z-index: 1;
+        cursor:pointer
+       }
+       @media(width >= 1200px){
+          #restpic{
+        display: inline;
+       }
+      #restpic img{  
+         width: 500px;
+            height: 352px;
+        }
+    }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+        .feedback{
+            border: 2px solid black;
+           display:flex;
+           flex-direction:column ;
+           align-items: center;
+        }
+        textarea{
+            display: block;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        label p{
+            
+            font-size: larger;
+            margin: auto;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="h1stuff">
+        <img class="h1icon1" src="images/icon.jpg" alt="">
+       <h1>Hirsch's restaurant </h1>
+    <img class="h1icon2" src="images/icon.jpg" alt="">
+    </div>
+       <header>
+     <nav>
+        <a href="index.html">Home</a> |
+        <a href="ourmenu.html"> Our menu </a> |
+        <a href="aboutus.html"> About us</a> |
+        <a href="signin.html">Sign in</a>
+    </nav>
+      <h1>Your feedback is important to us</h1>
+    </header>
+     <form class="feedback" method="post">
+        
+        <label >
+          <p> Enter your feedback here</p>
+            <textarea name="feedback" >
+              
+            </textarea>
+        </label>
+        <input type="submit">
+     </form>
+</body>
+</html>

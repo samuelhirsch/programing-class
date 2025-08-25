@@ -1,0 +1,15 @@
+i have 6 comments about my test(I'm not sure that everything is a problem but I wrote them all down...)
+1) my nav-bar and my footer i made -1px on both sides( the left one i 
+remember that i did on purpose because on the pic. it was seemed to me that it is -1px )email
+
+2)i didnt make sure that my table is not taking up the hole width;
+
+3)by the input email i forgot to put "name=email"
+
+4)When I worked on my page that when I'm pressing on the links ,the page  should not go under the NAV bar  
+(What you showed on the end of the class)I messed a little bit up with my coding 
+(And it's even not working so well on all sizes of screens)
+
+5)i Didn't make sure that the "height" of the images should be the same "height"
+
+6) My form is displayed Gray but I didn't display it into another Container
