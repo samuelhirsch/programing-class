@@ -1,7 +1,8 @@
+'use strict';
 const homework65 = (function () {
     function newBankAccount1() {
         return {
-            ballance: 0,
+            ballance: 100,
             performTransaction: function (amount) {
                 console.log(this.ballance += amount);
             }
@@ -11,7 +12,7 @@ const homework65 = (function () {
     const myBankAccount2 = newBankAccount1();
 
     myBankAccount1.performTransaction(100);
-    myBankAccount2.performTransaction(50);
+    myBankAccount2.performTransaction( 50);
     //hw step 2
     function transaction(amount) {
         console.log(this.ballance += amount);
