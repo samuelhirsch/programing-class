@@ -1,7 +1,7 @@
 (function () {
     'use strict';
-    const buttonselector = document.querySelector('button');
-    const myevent = buttonselector.addEventListener('click', buttonMaker);
+    const buttonselector = document.querySelector('button').addEventListener('click', buttonMaker);
+
 
     let textForButton = 1;
 
@@ -11,7 +11,7 @@
         newbutton.addEventListener('click', buttonMaker);
         document.body.appendChild(newbutton);
     };
-    // 2nd waybubble up
+    // 2nd way  bubble up
     /* document.body.addEventListener('click', e => {
         
          if(e.target ===document.body)

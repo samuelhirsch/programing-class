@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 1em 1em;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 1em;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>
+        color:
+        <input id="color" type="color" />
+      </label>
+      <label>
+        background color:
+        <input id="bgcolor" type="color" />
+      </label>
+    </div>
+    <table>
+        <thead>
+            <th>Type</th>
+            <th>Color</th>
+            <th>Time</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">No History</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="colors.js"></script>
+  </body>
+</html>
