@@ -21,7 +21,7 @@ const pcsMessageBox = (function () {
 
   document.body.appendChild(modalDiv);
 
-  return function (msg, modal, buttonarray,callback) {
+  return function (msg, modal, buttonarray, callback) {
 
     const div = document.createElement('div');
     div.style.boxSizing = 'border-box';
@@ -53,10 +53,10 @@ const pcsMessageBox = (function () {
         Button.innerText = e;
         buttonDiv.appendChild(Button);
         Button.addEventListener('click', removediv);
-        const mycall= callback.bind(this,e);
-        Button.addEventListener('click',mycall);
+        const mycall = callback.bind(this, e);
+        Button.addEventListener('click', mycall);
       });
-  }
+    }
     else {
       const okButton = document.createElement('button');
       okButton.innerText = 'ok';
