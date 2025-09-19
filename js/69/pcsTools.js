@@ -31,7 +31,7 @@ window.pcs = function (selector) {
         return `rgb(${r}, ${g}, ${b})`;
       }
       setCss(element, 'color', pickRandomColor());
-      setCss(element, 'background', pickRandomColor());
+      
 
     }, speed);
     setTimeout(() => {
