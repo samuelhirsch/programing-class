@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            background-color: greenyellow;
+
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+
+        #loading {
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            margin-left: -40px;
+            padding: 1em;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="loadform">
+        <label>
+            Load a file: <input id="loadinput">
+        </label>
+        <button id="loadbutton">Load</button>
+        <button type="button" id="refresh">Refresh</button>
+    </form>
+    <div id="content">
+        Your file content here
+    </div>
+    <div id="loading">
+        Loading...
+    </div>
+
+    <script src="MessegeBox.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="ajax.js"></script>
+
+</body>
+
+</html>
