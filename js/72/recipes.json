@@ -1,0 +1,18 @@
+[
+    {
+        "recipe": "Challah",
+        "url": "challah.json"
+    },
+    {
+        "recipe": "Potato Kugel",
+        "url": "potatokugel.json"
+    },
+    {
+        "recipe": "Potato Latkes",
+        "url": "potatolatkes.json"
+    },
+    {
+        "recipe": "Honey Cake",
+        "url": "honeycake.json"
+    }
+]

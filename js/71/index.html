@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #content {
+    #content {
             background-color: greenyellow;
-
             margin: 0.5em;
             padding: 0.5em;
+           overflow:auto;
         }
 
         #loading {
@@ -32,9 +32,9 @@
         <button id="loadbutton">Load</button>
         <button type="button" id="refresh">Refresh</button>
     </form>
-    <div id="content">
+    <pre id="content">
         Your file content here
-    </div>
+    </pre>
     <div id="loading">
         Loading...
     </div>
