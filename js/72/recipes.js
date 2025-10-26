@@ -8,7 +8,7 @@
     const headerIngredient = document.querySelector('#headeringredient');
     try {
         const jsonFile = await fetch('recipes.json');
-        if (!jsonFile.ok) {
+        if (!jsonFile.ok) { 
             throw new Error(`${jsonFile.status}-${jsonFile.statusText}}`);
         }
         const ListOfRecipe = await jsonFile.json();

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: rgb(198, 196, 196);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+
+        #videolist {
+            list-style: none;
+            padding: 0;
+            display: grid;
+           /*grid-template-columns:1fr;*/
+            gap: 1em;
+        }
+
+        #videolist video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            box-sizing: border-box;
+            object-fit: cover;
+
+        }
+
+        #videolist li {
+            /* display: inline-block;*/
+           
+           /* width: 100%;
+            padding: 1em;*/
+            box-sizing: border-box;
+          display: grid;
+        grid-template-rows: 1fr 22px;
+
+        }
+
+        #videolist li header {
+            display: inline;
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+            background-color: white;
+        }
+
+        @media screen and (min-width:510px) {
+            #videolist{
+               grid-template-columns:repeat(2,1fr);
+            }
+        }
+
+        @media screen and (min-width:800px) {
+            #videolist{
+                 grid-template-columns:repeat(4,1fr);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Videos App</h1>
+    <h2>Select a video to play</h2>
+    <ul id="videolist">
+        <!--li>
+            <header>huy</header><video src="images/elhannar.png" controls></video>
+        </li-->
+    </ul>
+    <script src="videos.js"></script>
+</body>
+
+</html>
