@@ -19,7 +19,7 @@
         "url": "kolzman.mp4",
         "image": "images/kolzman.png"
     },
-     {
+    {
         "title": "El Hanaar",
         "url": "El Hanaar Hazeh.mp4",
         "image": ""
@@ -39,7 +39,7 @@
         "url": "kolzman.mp4",
         "image": "images/kolzman.png"
     },
-     {
+    {
         "title": "El Hanaar",
         "url": "El Hanaar Hazeh.mp4",
         "image": "images/elhannar.png"
@@ -59,7 +59,7 @@
         "url": "kolzman.mp4",
         "image": "images/kolzman.png"
     },
-     {
+    {
         "title": "El Hanaar",
         "url": "El Hanaar Hazeh.mp4",
         "image": "images/elhannar.png"
@@ -79,5 +79,4 @@
         "url": "kolzman.mp4",
         "image": "images/kolzman.png"
     }
-   
 ]
