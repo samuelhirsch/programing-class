@@ -1,6 +1,7 @@
 (async function () {
   'use strict';
   const myVideos = document.querySelector('#videolist');
+  const playvideo=document.querySelector('video');
   try {
     const response = await fetch('videos.json');
     if (!response.ok) {
@@ -11,19 +12,21 @@
       const newLi = document.createElement('li');
       const title = document.createElement('header');
       title.innerText = video.title;
-      const newVideo = document.createElement('video');
+      const newimg = document.createElement('img');
       newLi.addEventListener('click', () => {
-        newVideo.play();
+       playvideo.src=video.url;
+       playvideo.play();
       });
-      newVideo.src = video.url;
+      
+      
       if (video.image) {
-        newVideo.poster = video.image;
+        newimg.src=video.image;
       }
       else {
-        newVideo.poster = ('images/music.png');
+        newimg.src = ('images/music.png');
       }
-      newVideo.controls = true;
-      newLi.appendChild(newVideo);
+      
+      newLi.appendChild(newimg);
       newLi.appendChild(title);
       myVideos.appendChild(newLi);
     });

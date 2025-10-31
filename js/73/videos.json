@@ -11,8 +11,8 @@
     },
     {
         "title": "Yesh tikvah",
-        "url": "yesh tikvah.mp4",
-        "image": "images/yesh.png"
+        "url": "yesh tikvah.mp4"
+       
     },
     {
         "title": "Kol zman",
@@ -22,7 +22,7 @@
     {
         "title": "El Hanaar",
         "url": "El Hanaar Hazeh.mp4",
-        "image": ""
+        "image": "images/elhannar.png"
     },
     {
         "title": "Ivri",
