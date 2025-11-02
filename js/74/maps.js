@@ -20,6 +20,7 @@
         try {
             goButton.innerText = 'searching';
             const r = await fetch(`http://api.geonames.org/wikipediaSearch?q=${input.value}&maxRows=10&username=shmielhirsch&type=json`);
+            console.log('after first fetch..');
             if (!r.ok) {
                 throw new Error(`${r.status}-${r.statusText}`);
             }
@@ -38,14 +39,17 @@
 
     function createplaceLi(place) {
         const newli = document.createElement('li');
+        const placeimg=document.createElement('img');
+        placeimg.src=place.thumbnailImg || 'defult.png';
         newli.innerText = place.title;
+        newli.appendChild(placeimg);
         resultul.appendChild(newli);
 
         newli.addEventListener('click', () => {
             map.panTo({ lat: place.lat, lng: place.lng });
             setTimeout(() => {
                 map.setZoom(18);
-            },1000);
+            }, 1000);
 
         });
         bounds.extend({ lat: place.lat, lng: place.lng });
