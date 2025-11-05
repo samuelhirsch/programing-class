@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+          margin: 0;
+        }
+
+        #containerimg {
+            display: flex;
+            flex-wrap: wrap;
+          gap: 0.5em;
+          height: 100%;
+          box-sizing: border-box;
+          overflow-y: auto;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 3px solid lightgreen;
+            padding: 1em;
+        }
+
+       /* .potatoimg {
+            position:absolute;
+        }*/
+        
+
+        #maindiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("images/backround.jpg");
+           
+           background-position-x: 50%;
+           background-size: contain;
+        }
+        #maindiv audio{
+            position: absolute;
+            top:0;
+           right:0;
+        }
+
+        #mainpotatoimg {
+        }
+    </style>
+</head>
+
+<body>
+    <div id="containerimg">
+        <img src="images/ear1.png" alt="ear1" class="potatoimg" id="i1">
+        <img src="images/ear2.png" alt="ear2" class="potatoimg" id="i2">
+        <img src="images/eyes1.png" alt="eyes1" class="potatoimg"id="i3">
+        <img src="images/eyes2.png" alt="eyes2" class="potatoimg"id="i4">
+        <img src="images/shoes.png" alt="eyes3" class="potatoimg"id="i5">
+        <img src="images/eyes4.png" alt="eyes4" class="potatoimg"id="i6">
+        <img src="images/eyes5.png" alt="eyes5" class="potatoimg"id="i7">
+        <img src="images/glassesAndNose.png" alt="glassesAndNose" class="potatoimg" id="i8">
+        <img src="images/mouth1.png" alt="mouth4" class="potatoimg" id="i9">
+        <img src="images/mouth2.png" alt="mouth2" class="potatoimg" id="i10">
+        <img src="images/mouth3.png" alt="mouth3" class="potatoimg" id="i11">
+        <img src="images/nose1.png" alt="nose1" class="potatoimg" id="i12">
+        <img src="images/nose2.png" alt="nose2" class="potatoimg"id="i13">
+    </div>
+    <div id="maindiv">
+        <audio src="yaamoid.mp3" controls autoplay></audio>
+        <img src="images/body1.png" alt="body1" id="mainpotatoimg">
+    </div>
+   
+    <script src="potatohead.js"></script>
+</body>
+
+</html>
