@@ -14,23 +14,26 @@
      });
    
      document.addEventListener('mousedown', (e) => {
-          if (e.target.className === 'potatoimg') {
-
+            if (e.target.className==='potatoimg'){
+                e.preventDefault();
                dragging = e.target;
                x = e.offsetX;
                y = e.offsetY;
-               e.preventDefault();
+               
                console.log(dragging);
-          }
+            }
      });
      document.addEventListener('mousemove', (e) => {
-          if (dragging && e.target.className==='potatoimg') {
+       if (dragging){
                dragging.style.left = `${e.pageX - x}px`;
                dragging.style.top = `${e.pageY - y}px`;
                dragging.style.zIndex=myZindex++;
+          
                dragging.style.position = 'absolute';
-          }
-     });
+               }
+          });
+        
+   
      document.addEventListener('mouseup', (e) => {
           dragging = null;
         // const parrent= e.currentTarget();

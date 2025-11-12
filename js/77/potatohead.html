@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            margin: 0;
+        }
+
+        #containerimg {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+            height: 100%;
+            box-sizing: border-box;
+            overflow-y: auto;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 3px solid lightgreen;
+            padding: 1em;
+            background-color: rgb(236, 194, 98);
+        }
+
+        #maindiv {
+            display: flex;
+            justify-content: space-around;
+            padding: 3em;
+            background-image: url("images/backround.jpg");
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-size: cover;
+
+        }
+
+        #optiondiv * {
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        #music-div {
+            border: solid rgb(236, 194, 98) 3px;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+            text-align: center;
+
+        }
+
+        #music-div:hover {
+            background-color: rgb(236, 194, 98);
+        }
+
+        #music-div p {
+            margin: 0;
+        }
+
+        #music-ul {
+            list-style: none;
+            padding: 0;
+            display: none;
+        }
+
+        .music-li {
+            margin: 0;
+            padding: 0.5em;
+            display: flex;
+             gap:0.5em
+        }
+        .music-li span{
+            flex-grow: 1;
+        }
+        #stop-button{
+            margin:auto;
+        }
+
+        .music-li:hover {
+            border: 1px solid rgb(79, 57, 6);
+        }
+
+        .music-li:hover {
+            cursor: pointer;
+        }
+        #selected-music {
+            border: solid rgb(236, 194, 98) 3px;
+        }
+        #play:hover {
+            cursor: pointer;
+        }
+        #mainpotatoimg {}
+    </style>
+</head>
+
+<body>
+    <div id="containerimg">
+        <img src="images/body1.png" alt="body1" id="mainpotatoimg" class="potatoimg" id="i0">
+        <img src="images/ear1.png" alt="ear1" class="potatoimg" id="i1">
+        <img src="images/ear2.png" alt="ear2" class="potatoimg" id="i2">
+        <img src="images/eyes1.png" alt="eyes1" class="potatoimg" id="i3">
+        <img src="images/eyes2.png" alt="eyes2" class="potatoimg" id="i4">
+        <img src="images/shoes.png" alt="eyes3" class="potatoimg" id="i5">
+        <img src="images/eyes4.png" alt="eyes4" class="potatoimg" id="i6">
+        <img src="images/eyes5.png" alt="eyes5" class="potatoimg" id="i7">
+        <img src="images/glassesAndNose.png" alt="glassesAndNose" class="potatoimg" id="i8">
+        <img src="images/mouth1.png" alt="mouth4" class="potatoimg" id="i9">
+        <img src="images/mouth2.png" alt="mouth2" class="potatoimg" id="i10">
+        <img src="images/mouth3.png" alt="mouth3" class="potatoimg" id="i11">
+        <img src="images/nose1.png" alt="nose1" class="potatoimg" id="i12">
+        <img src="images/nose2.png" alt="nose2" class="potatoimg" id="i13">
+
+    </div>
+    <div id="maindiv">
+        <div id="optiondiv">
+            <div id="music-div">
+                <p>Select music</p>
+                <ul id="music-ul">
+                    <li class="music-li" id="nice-music"><span>Nice music</span><button id="button-nice-music">play</button></li>
+                    <li class="music-li" id="yaamoid"><span>Yaamoid</span><button id="button-yaamoid">play</button></li>
+                    <li class="music-li" id="stop"><button id="stop-button">Stop</button></li>
+                </ul>
+                <audio id="music"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="potatohead.js"></script>
+    <script src="potatohead2.js"></script>
+</body>
+
+</html>
