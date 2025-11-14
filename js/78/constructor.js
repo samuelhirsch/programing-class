@@ -9,19 +9,20 @@ const VehicleFunctions = {
         console.log(`My color is '${this.color}' and my speed is '${this.speed}'`);
     }
 };
+
 function Vehicle(color) {
     this.color = color;
 }
-
-
-function Plane(color) {
-    Vehicle.call(this, color);
-
-}
 Vehicle.prototype = VehicleFunctions;
-//Vehicle.prototype.constructor=Vehicle;
+Vehicle.prototype.constructor=Vehicle;
+
+  function Plane(color) {
+    Vehicle.call(this, color);
+}
+
 
 Plane.prototype = Object.create(Vehicle.prototype);
+Plane.prototype.constructor=Plane;
 Plane.prototype.go = function(speed) {
     this.speed = speed;
     console.log(`Now flying at speed ${this.speed}`);
