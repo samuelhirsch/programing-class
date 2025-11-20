@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #newball-div {
+            padding: 0.5em;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            gap: 0.5em;
+            border: 1px solid purple;
+            top: 2px;
+            left: 2px;
+            background-color: rgb(180, 243, 173);
+            display: none;
+        }
+        #newball-button{
+            position: absolute;
+            top:10px;
+            left: 10px;
+            border: 1px solid rgb(20, 169, 15);
+            background-color:rgb(163, 239, 160) ;
+            border-radius: 50px;
+            padding:20px;
+            cursor: pointer;
+        }
+        #newball-button:hover{
+            scale: 1.2;
+        }
+
+        #theCanvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="newball-button">New  ball</button>
+    <div id="newball-div">
+        <label>
+            Choose a color: <input id="newball-color" type="color">
+        </label>
+        <label>Choose a size :
+            <input id="newball-radius" type="text">
+        </label>
+        <button id="Create-button">Create</button>
+    </div>
+    <canvas id="theCanvas"></canvas>
+    <script src="ballclass.js"></script>
+    <script src="ball.js"></script>
+</body>
+
+</html>

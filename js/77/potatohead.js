@@ -36,7 +36,7 @@
 
      document.addEventListener('mouseup', (e) => {
 
-          if (dragging)/*(e.target !== e.currentTarget && e.target.className === 'potatoimg')*/ {
+          if (dragging) {
                saveParts(e);
           }
           dragging = null;

@@ -32,13 +32,12 @@
         }
 
         #maindiv {
-            display: flex;
-            justify-content: space-around;
-            padding: 3em;
-            background-image: url("images/backround.jpg");
+            display: grid;
+            background-image: url("images/background4.jpg");
             background-repeat: no-repeat;
             background-position-x: 50%;
             background-size: cover;
+            grid-template-rows: 50px 1fr;
 
         }
 
@@ -47,23 +46,31 @@
             font-family: cursive;
         }
 
-        #music-div {
+        #optiondiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            justify-items: center;
+
+        }
+
+        #music-div,
+        #background-div {
             border: solid rgb(236, 194, 98) 3px;
-            padding-right: 0.5em;
-            padding-left: 0.5em;
             text-align: center;
-
+            width: max-content;
+            background-color: rgb(240, 213, 148);
         }
 
-        #music-div:hover {
-            background-color: rgb(236, 194, 98);
-        }
-
-        #music-div p {
+        #music-div p,
+        #background-div p {
             margin: 0;
+            background-color: rgb(78, 55, 2);
+            color: white;
         }
 
-        #music-ul {
+        #music-ul,
+       #background-div #background-ul {
             list-style: none;
             padding: 0;
             display: none;
@@ -73,28 +80,38 @@
             margin: 0;
             padding: 0.5em;
             display: flex;
-             gap:0.5em
+            gap: 0.5em;
         }
-        .music-li span{
+
+        .music-li span {
             flex-grow: 1;
         }
-        #stop-button{
-            margin:auto;
+
+        #stop-button {
+            margin: auto;
         }
 
-        .music-li:hover {
-            border: 1px solid rgb(79, 57, 6);
+        .music-li:hover,
+        #background-ul li:hover {
+            cursor: pointer;
+            scale: 1.2;
+            background-color: rgb(250, 209, 111);
         }
 
-        .music-li:hover {
+        #background-ul {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+        }
+
+        #background-ul img {
+            width: 100%;
             cursor: pointer;
+            height: 100%;
+            padding: 0.5em;
+            box-sizing: border-box;
         }
-        #selected-music {
-            border: solid rgb(236, 194, 98) 3px;
-        }
-        #play:hover {
-            cursor: pointer;
-        }
+
         #mainpotatoimg {}
     </style>
 </head>
@@ -122,17 +139,28 @@
             <div id="music-div">
                 <p>Select music</p>
                 <ul id="music-ul">
-                    <li class="music-li" id="nice-music"><span>Nice music</span><button id="button-nice-music">play</button></li>
+                    <li class="music-li" id="nice-music"><span>Nice music</span><button
+                            id="button-nice-music">play</button></li>
                     <li class="music-li" id="yaamoid"><span>Yaamoid</span><button id="button-yaamoid">play</button></li>
                     <li class="music-li" id="stop"><button id="stop-button">Stop</button></li>
                 </ul>
                 <audio id="music"></audio>
             </div>
+            <div id="background-div">
+                <p>Select a background</p>
+                <ul id="background-ul">
+                    <li><img src="images/background1.jpg" alt=""></li>
+                    <li><img src="images/background2.jpg" alt=""></li>
+                    <li> <img src="images/background3.jpg" alt=""></li>
+                    <li> <img src="images/background.jpg" alt=""></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <script src="potatohead.js"></script>
-    <script src="potatohead2.js"></script>
+    <script src="potatoheadmusic.js"></script>
+    <script src="potatoheadbackground.js"></script>
 </body>
 
 </html>
