@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #theCanvas {
+      display: block;
+      border: 1px solid black;
+      margin: auto;
+    }
+
+    #game-over-messege {
+      position: absolute;
+      background-color: red;
+      text-align: center;
+      padding: 0.5em;
+      background-image: url(snakeHead.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      top: 50% ;
+      left:50%;
+      margin-left: -135px;
+      margin-top: -52px;
+      display: none;
+    }
+
+    #game-over-messege p {
+      margin: 0;
+      font-size: 1.5em;
+    }
+     #game-over-messege #game-over-p {
+      font-size: 3em;
+    }
+    #yes-button{
+      background-color: greenyellow;
+      cursor:pointer
+    }
+    #yes-button:hover{
+      scale:1.2
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="game-audio"></audio>
+  <div id="game-over-messege">
+    <p id="game-over-p">Game over</p>
+    <p>Do you want to play again ?</p>
+    <button id="yes-button">Yes</button>
+  </div>
+  <canvas id="theCanvas"></canvas>
+  <script src="snake.js"></script>
+</body>
+
+</html>
