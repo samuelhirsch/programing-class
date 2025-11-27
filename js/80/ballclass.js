@@ -10,12 +10,13 @@ class BallClass {
         this.color = color;
         this.x = this.RADIUS + 1;
         this.y = this.RADIUS + 1;
+        this.colorFull = false;
     }
 
     draw() {
         BallClass.context.beginPath();
 
-        BallClass.context.fillStyle = this.color;//randomColors();
+        BallClass.context.fillStyle = !this.colorFull ? this.color : this.randomColors();
 
         this.x += this.dx;
         this.y += this.dy;
@@ -51,7 +52,7 @@ class BallClass {
     changeColorForRandom = 0;
     randomColors() {
         this.counterForRandom++;
-        if (this.counterForRandom === 300) {
+        if (this.counterForRandom === 100) {
             this.counterForRandom = 0;
             this.changeColorForRandom++;
             if (this.changeColorForRandom === this.colorArray.length) {

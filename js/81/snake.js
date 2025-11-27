@@ -68,9 +68,8 @@
           snake.y += snake.SNAKE_SIZE;
           break;
       }
-      context.font = '20px Arial';
-      context.fillText(`Score :${score}`, 0, 20);
       context.drawImage(snakeHead, snake.x, snake.y);
+      console.log(snake.x,theCanvas.width);
       if (appleReady) {
         context.drawImage(appleImage, apple.x, apple.y);
       }
@@ -83,9 +82,9 @@
         speed-=2;
         start();
       }
-      context.font = '20px';
-      context.fillText(`Score :${score}`, 0, 20);
-      if (snake.x >= theCanvas.width || snake.x < 0 || snake.y >= theCanvas.height || snake.y < 0) {
+      context.font = '30px Arial';
+      context.fillText(`Score :${score}`, 10, 30);
+      if (snake.x >= theCanvas.width|| snake.x < 0 || snake.y >= theCanvas.height || snake.y < 0) {
         gameAudio.src = "snake_dramatic_death.wav";
         gameAudio.play();
         score = 0;
@@ -116,7 +115,6 @@
     apple.x = getPositionForApple('x');
     apple.y = getPositionForApple('y');
     console.log(apple.x, apple.y);
-
   }
 
 
