@@ -1,0 +1,7 @@
+{
+    "Temperature":"40",
+    "Humidity":"64%",
+    "Wind":"7 mph",
+    "conditions":"Partly sunny",
+    "img":"weathericon.svg"
+}
