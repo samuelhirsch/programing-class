@@ -1,0 +1,23 @@
+.error {
+  color: red;
+}
+#add-recipe-div{
+  background-color: burlywood;
+ display: inline-block;
+ margin: auto;
+  padding: 1em;
+  position: fixed;
+ 
+}
+#add-recipe-form{
+  width: 100%;
+  display: grid;
+  grid-template-columns:min-content 1fr;
+ gap: 0.5em;
+ text-align: left;
+}
+.span-2{
+  grid-column: 1/3;
+}
+
+
