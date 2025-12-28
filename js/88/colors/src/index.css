@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+#input-div {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin: auto;
+  margin: 0.5em;
+}
+
+label {
+  display: flex
+}
+
+label span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+#main-div {
+  font-size: 6em;
+ 
+}

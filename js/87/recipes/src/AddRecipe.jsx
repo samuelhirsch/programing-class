@@ -10,8 +10,8 @@ export default function AddRecipe(props) {
     const { ingName, picture, ingredients, directions } = inputs;
     const [directionInput, setDirectionInput] = useState("");
     const [ingredientsInput, setIngredientsInput] = useState("");
+    
     function HandleInput(e) {
-
         if (e.target.name === 'ingredients') {
             setIngredientsInput(e.target.value)
         }

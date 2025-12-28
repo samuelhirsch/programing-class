@@ -8,6 +8,7 @@
     const headerIngredient = document.querySelector('#headeringredient');
     try {
         const jsonFile = await fetch('recipes.json');
+        console.log(jsonFile);
         if (!jsonFile.ok) { 
             throw new Error(`${jsonFile.status}-${jsonFile.statusText}}`);
         }
