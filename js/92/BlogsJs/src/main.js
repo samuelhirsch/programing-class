@@ -15,7 +15,6 @@ async function fetchHelper(url) {
 async function showUsers() {
   try {
     const users = await fetchHelper('https://jsonplaceholder.typicode.com/users');
-    //const users = await fetchHelper("usersJson.json")
     const usersUl = document.createElement('ul')
     usersUl.className = "main-ul"
     usersUl.id = "main-users-ul"
@@ -48,7 +47,6 @@ let postError
 async function getPosts(id) {
   try {
     const posts = await fetchHelper(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
-    // const posts = await fetchHelper("postsJson.json")
     postsUl = document.createElement("ul")
     postsUl.className = "main-ul"
     postsUl.id = "main-post-ul"
@@ -78,6 +76,7 @@ async function getPosts(id) {
   finally {
     usersDiv.style.display = "none"
     postsDiv.style.display = "block"
+     window.scrollTo(0, 0);
   }
 }
 
@@ -85,8 +84,7 @@ async function showComments(postId, post, commentsDiv, button) {
   if (button.innerText === "Show Comments") {
     commentsDiv.innerHTML = `<h3>Comments</h3>`
     try {
-      //const comments = await fetchHelper(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
-      const comments = await fetchHelper(`commentsJson.json`)
+      const comments = await fetchHelper(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
       const commentsUl = document.createElement("ul")
       commentsUl.id = "main-comment-ul"
       comments.forEach(comment => {
