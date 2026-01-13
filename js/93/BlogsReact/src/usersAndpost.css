@@ -1,0 +1,72 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+#users-div,#posts-div{
+  margin-top: 85px;
+}
+.main-ul {
+  color: rgb(91, 14, 159);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+#main-users-ul{
+  margin-top: 85px;
+}
+.user-li {
+  cursor: pointer;
+}
+
+.user-li,
+.post-li {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.user-li:hover,
+.post-li:hover {
+  background-color: rgb(167, 232, 211);
+  color: black;
+}
+
+.user-li span,
+.comment-ul span {
+  font-weight: bolder;
+  color: rgb(18, 4, 79);
+}
+#post-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  background-color: rgb(132, 220, 247);
+  z-index: 1;
+}
+#post-header h1{
+  grid-column: 1/3;
+}
+#post-header button{
+  justify-self: end;
+  align-self: end;
+}
+
+.post-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+.post-show-comments{
+ background-color:rgba(177, 243, 222);
+ color: black;
+}
+.post-li button {
+  align-self: center;
+}
+
+@media screen and (min-width:600px) {
+  .main-ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

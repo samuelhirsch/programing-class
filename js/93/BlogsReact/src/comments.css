@@ -1,0 +1,35 @@
+#Comments-div {
+  position:relative;
+  height: 0px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#Comments-div h3 {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  background-color: rgb(124, 203, 179);
+}
+
+#main-comment-ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  background-color: rgb(159, 217, 200);
+
+}
+
+#Comments-div .comment-ul {
+  border: 1px solid black;
+  padding: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.comment-ul:hover {
+  background-color: rgb(29, 199, 145);
+  color: black;
+}

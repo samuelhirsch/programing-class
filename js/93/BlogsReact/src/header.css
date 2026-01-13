@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(91, 14, 159);
+  margin: 0;
+}
+
+#users-header ,#post-header{
+  background-color: rgb(132, 220, 247);
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5em;
+}
+#users-header{
+  position: absolute;
+}
+#post-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  background-color: rgb(132, 220, 247);
+}
+#post-header h1{
+  grid-column: 1/3;
+}
+#post-header a{
+  justify-self: end;
+  align-self: end;
+}
+
+
+h2 {
+  margin: 0;
+  text-decoration: underline;
+}
