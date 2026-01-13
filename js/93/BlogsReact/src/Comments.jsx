@@ -17,6 +17,7 @@ export default function Comments(props) {
                 setComments({ commentsList: e.message, commentsSuccess: false })
             }
         }())
+          // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <>
