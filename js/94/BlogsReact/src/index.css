@@ -1,0 +1,13 @@
+
+a,
+a:visited
+{
+  text-decoration: none;
+}
+.error{
+  background-color: red;
+  margin: 0;
+}
+#loading-gif{
+  padding-top: 100px;
+}

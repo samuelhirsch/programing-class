@@ -7,11 +7,11 @@ import fetchHelper from './fetchHelper'
 
 export default function Users() {
     const [users, setUsersList] = useState({ fetchSuccess: true, usersList:null})
-    
+
     const {fetchSuccess,usersList}=users
     useEffect(() => {
         (async function () {
-         
+
            try{
             const usersList =await fetchHelper("https://jsonplaceholder.typicode.com/users") 
             setUsersList({usersList,fetchSuccess:true})
