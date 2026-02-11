@@ -11,6 +11,7 @@ app.param(["number1", "number2"], (req, res, next,value,name) => {
  req.params[name]=num;
   next();
 
+  
 })
 app.get("/add/:number1/:number2", (req, res, next) => {
  const { number1, number2 } = req.params;
