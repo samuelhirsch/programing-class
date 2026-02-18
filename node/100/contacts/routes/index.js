@@ -18,11 +18,12 @@ let contacts = [
   }
 ];
 
-router.get("/api/contacts",function (req, res, next) {
+router.get("/api/contacts", function (req, res, next) {
   res.setHeader('content-type', 'application/json');
   res.end(JSON.stringify(contacts));
-  //res.send(JSON.stringify(contacts))
-})
+
+});
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('layout', {
@@ -72,12 +73,12 @@ router.get('/editContact/:id', (req, res, next) => {
 router.post('/editContact/:id', (req, res, next) => {
   let contactId = Number(req.params.id)
   console.log(req.body)
-  const{first,last,email,phone}=req.body
-let editContact=contacts.find((c) => c.id === contactId)
-editContact.first=first;
-editContact.last=last;
-editContact.email=email;
-editContact.phone=phone;
+  const { first, last, email, phone } = req.body
+  let editContact = contacts.find((c) => c.id === contactId)
+  editContact.first = first;
+  editContact.last = last;
+  editContact.email = email;
+  editContact.phone = phone;
   res.writeHead(301, {
     location: '/'
   });
