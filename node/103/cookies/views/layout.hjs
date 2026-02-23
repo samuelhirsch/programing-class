@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ appTitle }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>{{ appTitle }}</h1>
+  <h2>Enter you first and last name and it will be
+    set for your cookies
+  </h2>
+  <form action="" method="get">
+    <label>
+      first name:<input name="first" required>
+    </label>
+    <label>
+    last name:<input name="last" required>
+    </label>
+    <button>save</button>
+  </form>
+  
+  {{> content}}
+</body>
+
+</html>

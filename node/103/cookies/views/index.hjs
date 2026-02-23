@@ -1,0 +1,7 @@
+<div>
+<h2>Your cookies ! ! !</h2>
+<p>tour first name is <strong>{{firstName}} </strong>your last name is <strong>{{lastName}}</strong></p>
+
+<p>you have visited this site 
+  <strong>{{visited}}</strong> times</p>
+  </div>
