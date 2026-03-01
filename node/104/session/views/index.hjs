@@ -1,0 +1,14 @@
+<h2>Hello {{userName}}</h2>
+<h2>Enter you first and last name and it will be
+    set for your session
+</h2>
+<form  method="post" action="/insertName">
+    <label>
+        first name:<input name="first" required>
+    </label>
+    <label>
+        last name:<input name="last" required>
+    </label>
+    <button>save</button>
+</form>
+ <h3>You have visited this site {{visitedCount}} times</h3>
