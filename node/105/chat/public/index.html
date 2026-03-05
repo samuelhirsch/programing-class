@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/chat.css">
+</head>
+
+<body>
+  <div id="enter-name-div">Please enter your name <input id="enter-name-input">
+    <button id="save-name-button">Save</button>
+  </div>
+  <div id="maiv-div">
+    <h2 id="hello-h2">hello <strong id="name"></strong>, chat what ever you want</h2>
+    <div id="messages"></div>
+    <form id="messageForm">
+      <input name="message" id="messageInput" required>
+      <button>send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>
