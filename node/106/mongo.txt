@@ -1,0 +1,120 @@
+test> show dbs
+admin   40.00 KiB
+config  80.00 KiB
+local   72.00 KiB
+test> use people
+switched to db people
+people> db.men.insertOne({first:samuel,last:hirsch})
+ReferenceError: samuel is not defined
+people> db.men.insertOne({first:"samuel",last:"hirsch"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('69af77b553e7f0a0487c2907')
+}
+people> db.men.insertMany({first:"nechemya",last:"indig"},{first:"shimen",last:"shtern"})
+MongoInvalidArgumentError: Argument "docs" must be an array of documents
+people> db.men.insertMany([{first:"nechemya",last:"indig"},{first:"shimen",last:"shtern"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69af78bc53e7f0a0487c2908'),
+    '1': ObjectId('69af78bc53e7f0a0487c2909')
+  }
+}
+people> db.men.find()
+[
+  {
+    _id: ObjectId('69af77b553e7f0a0487c2907'),
+    first: 'samuel',
+    last: 'hirsch'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2908'),
+    first: 'nechemya',
+    last: 'indig'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2909'),
+    first: 'shimen',
+    last: 'shtern'
+  }
+]
+people> db.men.find({name:"samuel"})
+
+people> db.men.find({first:"samuel"})
+[
+  {
+    _id: ObjectId('69af77b553e7f0a0487c2907'),
+    first: 'samuel',
+    last: 'hirsch'
+  }
+]
+people> db.men.find({},{first:1})
+[
+  { _id: ObjectId('69af77b553e7f0a0487c2907'), first: 'samuel' },
+  { _id: ObjectId('69af78bc53e7f0a0487c2908'), first: 'nechemya' },
+  { _id: ObjectId('69af78bc53e7f0a0487c2909'), first: 'shimen' }
+]
+people> db.men.find().sort(name:1)
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:23)
+
+> 1 | db.men.find().sort(name:1)
+    |                        ^
+  2 |
+
+people> db.men.find().sort({name:1})
+[
+  {
+    _id: ObjectId('69af77b553e7f0a0487c2907'),
+    first: 'samuel',
+    last: 'hirsch'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2908'),
+    first: 'nechemya',
+    last: 'indig'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2909'),
+    first: 'shimen',
+    last: 'shtern'
+  }
+]
+people> db.men.find().sort({first:1})
+[
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2908'),
+    first: 'nechemya',
+    last: 'indig'
+  },
+  {
+    _id: ObjectId('69af77b553e7f0a0487c2907'),
+    first: 'samuel',
+    last: 'hirsch'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2909'),
+    first: 'shimen',
+    last: 'shtern'
+  }
+]
+people> db.men.find().sort({first:-1})
+[
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2909'),
+    first: 'shimen',
+    last: 'shtern'
+  },
+  {
+    _id: ObjectId('69af77b553e7f0a0487c2907'),
+    first: 'samuel',
+    last: 'hirsch'
+  },
+  {
+    _id: ObjectId('69af78bc53e7f0a0487c2908'),
+    first: 'nechemya',
+    last: 'indig'
+  }
+]
+people>
